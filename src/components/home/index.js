@@ -5,6 +5,22 @@ import './styles.css';
 
 class Home extends Component {
 
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            form: {
+                title: '',
+                url: '',
+                techs: '',
+            },
+            repositories: [],
+        }
+
+        this.handleSubmitData = this.handleSubmitData.bind(this);
+        this.onChangeData = this.onChangeData.bind(this);
+        this.handleDeleteData = this.handleDeleteData.bind(this);
+    }
 
 }
 
