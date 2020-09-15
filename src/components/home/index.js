@@ -34,6 +34,8 @@ class Home extends Component {
                     <input name="techs" value={this.state.form.techs} onChange={this.onChangeData} type="text" placeholder="Techs do repositório" className="textfield"></input>
                     <input type="submit" className="submit" value="Enviar"/>
                 </form>
+                <div className="divider"/>   
+                <RepositoryComponent repositories={this.state.repositories} handleDeleteData={this.handleDeleteData}/>
             </div>
         );
     }
