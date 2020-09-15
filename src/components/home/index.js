@@ -28,6 +28,12 @@ class Home extends Component {
                 <header className="header">
                     <a href="#home"><h1 id="title">MyRepositories</h1></a>
                 </header>
+                <form className="form"  onSubmit={this.handleSubmitData} >
+                    <input name="title" value={this.state.form.title} onChange={this.onChangeData} type="text" placeholder="Título do repositório" className="textfield"></input>
+                    <input name="url" value={this.state.form.url} onChange={this.onChangeData} type="text" placeholder="URL do repositório" className="textfield"></input>                
+                    <input name="techs" value={this.state.form.techs} onChange={this.onChangeData} type="text" placeholder="Techs do repositório" className="textfield"></input>
+                    <input type="submit" className="submit" value="Enviar"/>
+                </form>
             </div>
         );
     }
