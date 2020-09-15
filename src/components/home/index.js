@@ -54,6 +54,11 @@ class Home extends Component {
     }
 
     onChangeData = (newValue) =>  {
+        let newForm = this.state.form;
+        newForm[newValue.target.name] = newValue.target.value;
+        this.setState({ form : newForm });
+    } 
+
     render() {
         return (
             <div className="container">
