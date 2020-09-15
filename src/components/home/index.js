@@ -21,6 +21,12 @@ class Home extends Component {
         this.onChangeData = this.onChangeData.bind(this);
         this.handleDeleteData = this.handleDeleteData.bind(this);
     }
+    
+    componentDidMount() {
+        api.get('/repositories').then(response => (
+            this.setState({ repositories: response.data })
+        ));
+    }
 
     render() {
         return (
