@@ -28,6 +28,32 @@ class Home extends Component {
         ));
     }
 
+    handleSubmitData = (event) => {
+        let { title, url, techs } = this.state.form;
+
+        const myTechs = techs.split(', ');
+
+        const request = {
+            title,
+            url,
+            techs: myTechs,
+        };
+
+        api.post('/repositories', request).then(response => {
+            this.setState({
+                repositories: [...this.state.repositories, response.data], 
+                form: {
+                    title: '',
+                    url: '',
+                    techs: '',
+                }
+            });
+        });
+
+        event.preventDefault();
+    }
+
+    onChangeData = (newValue) =>  {
     render() {
         return (
             <div className="container">
