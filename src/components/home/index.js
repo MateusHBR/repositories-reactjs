@@ -59,6 +59,19 @@ class Home extends Component {
         this.setState({ form : newForm });
     } 
 
+    handleDeleteData = (id) => {
+        const repo = this.state.repositories;
+
+        const repositoryIndex = repo.findIndex(repository => repository.id === id);
+        
+        api.delete( `/repositories/${id}` ).then(response => {
+            if(response.status === 204) {
+                repo.splice(repositoryIndex, 1);
+                this.setState({ repositories: repo });
+            }
+        });
+    }
+
     render() {
         return (
             <div className="container">
