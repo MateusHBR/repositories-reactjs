@@ -25,6 +25,9 @@ class Home extends Component {
     render() {
         return (
             <div className="container">
+                <header className="header">
+                    <a href="#home"><h1 id="title">MyRepositories</h1></a>
+                </header>
             </div>
         );
     }
