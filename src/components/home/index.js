@@ -22,6 +22,10 @@ class Home extends Component {
         this.handleDeleteData = this.handleDeleteData.bind(this);
     }
 
+    render() {
+        return (
+        );
+    }
 }
 
 export default Home;
