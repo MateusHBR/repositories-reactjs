@@ -1,0 +1,182 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header {
+    padding: 0 4rem;
+    width: 100%;
+    height: 5rem;
+    background-color: darkorchid;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header a{
+    text-decoration: none;
+}
+
+.header #title {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header #title:hover {
+    color: #f55ff5;
+    transition: color 0.4s ease;
+}
+
+.form {
+    margin-top: 5px;
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form input {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #aaaaaa;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.form .textfield {
+    border: 2px solid #aaaaaa;
+    
+}
+
+.form .textfield:focus {
+    transition: all 0.3s ease;
+    border-color: darkorchid;
+    box-shadow: 0 0 8px 0 darkorchid;
+}
+
+.form .submit {
+    background-color: darkorchid;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form .submit:hover {
+    transition: all 0.3s ease;
+    background-color: rgba(153, 50, 204, 0.788);
+    color: #f5f5f5;
+}
+
+.divider {
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #aaaaaa41;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.item {
+    margin: 10px 0;
+    height: 280px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 20px;
+    padding: 14px;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-style: solid;
+    border-color: #aaaaaa;
+    box-shadow: 0 0 5px 0 #aaaaaa;
+}
+
+.item .article-title {
+    height: 30px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item .article-title p {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.list-techs {
+    width: 100%;
+    height: 40%;
+    max-height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: stretch;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.list-techs .tech {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bolder;
+    color: darkorchid;
+    background-color: #ffffff;
+    border: 1px solid darkorchid;   
+    border-radius: 30px;
+    padding: 4px 15px;
+    margin-right: 5px;
+}
+
+.list-techs .tech:hover {
+    background-color: darkorchid;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.item .repository-link {
+    background-color: darkorchid;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.item .repository-link:hover {
+    transition: all 0.3s ease;
+    background-color: rgba(153, 50, 204, 0.788);
+    color: #f5f5f5;
+}
